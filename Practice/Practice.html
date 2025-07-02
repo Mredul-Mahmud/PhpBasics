@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin:0px;
+            padding: 0px;
+        }
+        .icon{
+            width: 80px;
+            flex:1;
+            object-fit: cover;
+            max-width: 100px;
+        }
+        .container{
+            display:flex;
+            justify-content: center;
+            margin:10px;
+            display:flex;
+            flex:1;
+            
+        }
+        .containerPic{
+            display:flex;
+            height:100px;
+            width:100px;
+            margin:10px;
+        }
+        .nav-holder{
+            display:flex;
+            max-height:100px;
+            flex:1;
+            
+        }
+        .nav{
+            flex:10;
+            background-color: antiquewhite;
+            display:flex;
+            align-items: center;
+            justify-content: flex-start;
+            
+        }
+        .nav-objects{
+            padding:10px;
+            flex-basis: 100px;
+            text-align: center;
+        }
+        @media(max-width: 500px) or (max-height: 500px){
+            h1{
+                color:red;
+            }
+            .nav-holder{
+                flex-direction: column;
+
+            }
+            .icon{
+                height: 100%;
+                width: 100%;
+                min-width: 100px;
+                flex:1;
+
+            }
+            .containerPic{
+                flex-direction: column;
+            }
+
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice CSS</title>
+</head>
+<body>
+    <h1>Practice CSS Media Query</h1>
+
+    <div class="nav-holder">
+       
+        <div class ="nav">
+            <div class="nav-objects"><a href="">Home</a></div>
+            <div class="nav-objects"><a href="">Facebook</a></div>
+            <div class="nav-objects"><a href="">Github</a></div>
+            <div class="nav-objects"><a href="">About</a></div>
+
+        </div>
+         <img class="icon" src="./img/drone-plane.jpg" alt="">
+
+    </div>
+
+    <div class="container">
+        <div class="containerPic"><img src="./img/01c751482ef7c4f5e93f3539efd27f6f.jpg" alt=""></div>
+        <div class="containerPic"><img src="./img/3f3e07d982a3b61e6d010796a1216d06.jpg" alt=""></div>
+        <div class="containerPic"><img src="./img/4be95e59e1c4f78405423a81f5d9c3b8.jpg" alt=""></div>
+        <div class="containerPic"><img src="./img/5531eeac26c931991bf7b0d2f6de2ef7.jpg" alt=""></div>
+        <div class="containerPic"><img src="./img/8497f3e93791cd2f444cf7d5437fde9e.jpg" alt=""></div>
+        <div class="containerPic"><img src="./img/52110e39ae286281dc66f6f4d0d8e1ba.jpg" alt=""></div>
+        <div class="containerPic"><img src="./img/3a22d64860fa3e3f766157082300ee83.jpg" alt=""></div>
+        <div class="containerPic"><img class="icon" src="./img/the_starry_night-wallpaper-1280x720.jpg" alt=""></div>
+
+    </div>
+    
+</body>
+</html>
